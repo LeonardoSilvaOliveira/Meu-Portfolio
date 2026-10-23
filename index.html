@@ -3,134 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Leonardo Silva, estudante de Sistemas de Informação na FIAP com foco em backend." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Portifólio-Leonardo</title>
+    <title>Leonardo Silva | Desenvolvedor de Software</title>
   </head>
   <body>
-
-    <div class="particulas"></div>
-
     <nav class="navegacao">
       <ul class="menu">
-        <li>
-          <a href="#inicio" class="menu-link">Início</a>
-        </li>
-        <li>
-          <a href="#sobre" class="menu-link">Sobre</a>
-        </li>
-        <li>
-          <a href="#projetos" class="menu-link">Projetos</a>
-        </li>
-        <li>
-          <a href="#contato" class="menu-link">Contato</a>
-        </li>
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contato" class="menu-link">Contato</a></li>
       </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
       <div>
-        <img
-          src="img/IMG-20260309-WA0013.jpg"
-          alt="Foto de Leonardo Silva"
-          class="foto-perfil"
-        />
-        <h1>Leonardo Silva</h1>
-        <p class="cabecalho-subtitulo">Desenvolvedor Full Stack</p>
+        <div class="cabecalho-texto">
+          <h1>Leonardo Silva</h1>
+          <p class="cabecalho-subtitulo">Estudante de Sistemas de Informação na FIAP</p>
+          <p class="cabecalho-frase">
+            Foco em backend com Java e SQL. Busco estágio em desenvolvimento de software.
+          </p>
+          <div class="cabecalho-links">
+            <a href="#projetos" class="btn btn-cheio">Ver projetos</a>
+            <a href="https://github.com/LeonardoSilvaOliveira" class="btn btn-vazio" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/leonardo-oliveira-04854834a/" class="btn btn-vazio" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <img src="img/IMG-20260309-WA0013.jpg" alt="Foto de Leonardo Silva" class="foto-perfil" />
       </div>
     </main>
 
     <section id="sobre" class="sobre">
       <h2 class="sobre-titulo">Sobre mim</h2>
       <div class="sobre-caixa">
-        <p class="sobre-paragrafo">
-          Olá! Meu nome é Leonardo Silva, sou um desenvolvedor Full Stack
-          apaixonado por tecnologia e inovação. Tenho experiência em
-          desenvolvimento web, trabalhando com diversas linguagens de
-          programação e frameworks. Estou sempre em busca de novos desafios e
-          oportunidades para aprimorar minhas habilidades e contribuir para
-          projetos significativos.
-        </p>
+        <div>
+          <p class="sobre-paragrafo">
+            Estudo Sistemas de Informação na FIAP e já trabalhei em projetos
+            com empresas parceiras como Vivo e Eurofarma. Gosto de backend,
+            testes e arquitetura de software, e de ver uma ideia virar algo
+            que as pessoas realmente usam.
+          </p>
+          
+        </div>
+        <ul class="habilidades">
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL e MySQL</li>
+          <li>Kotlin</li>
+          <li>Flutter</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>Git e GitHub</li>
+          <li>Testes unitários</li>
+          <li>Testes de integração</li>
+          <li>Linux</li>
+        </ul>
       </div>
     </section>
 
     <section id="projetos" class="projetos">
-      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <h2 class="projetos-titulo">Meus projetos</h2>
       <div class="projetos-caixa">
-        <div class="projeto-card">
-          <img
-            src="./img/Peojeto java.jpg"
-            alt="Projeto 1"
-            class="projeto-imagem"
-          />
+        <article class="projeto-card">
           <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Projeto 1</h3>
-            <p class="projeto-descricao">Descrição do projeto 1.</p>
+            <h3 class="info-projetos">Hub de microsserviços</h3>
+            <p class="projeto-descricao">Monorepo em Java com API Gateway, servidor Eureka e serviços separados de pedidos e pagamentos.</p>
+            <ul class="projeto-tecnologias"><li>Java</li><li>Microsserviços</li><li>GitHub Actions</li></ul>
+            <a href="https://github.com/LeonardoSilvaOliveira/microservices-hub-sipg-26" class="projeto-link" target="_blank" rel="noopener">Ver código</a>
           </div>
-        </div>
+        </article>
 
-        <div class="projeto-card">
-          <img
-            src="./img/Projeto JavaScript.jpg"
-            alt="Projeto 2"
-            class="projeto-imagem"
-          />
+        <article class="projeto-card">
           <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Projeto 2</h3>
-            <p class="projeto-descricao">Descrição do projeto 2.</p>
+            <h3 class="info-projetos">Robô rover (RoboCup FIAP)</h3>
+            <p class="projeto-descricao">Programação em C e integração entre hardware e software. Segundo lugar na competição de 2024.</p>
+            <ul class="projeto-tecnologias"><li>C</li><li>Sistemas embarcados</li></ul>
           </div>
-        </div>
-
-        <div class="projeto-card">
-          <img
-            src="./img/Peojeto java.jpg"
-            alt="Projeto 3"
-            class="projeto-imagem"
-          />
-          <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Projeto 3</h3>
-            <p class="projeto-descricao">Descrição do projeto 3.</p>
-          </div>
-        
-        </div>
-
-        <!-- Adicione mais projetos conforme necessário -->
+        </article>
       </div>
     </section>
 
     <section id="contato" class="contato">
-      <h2 class="contato-titulo">Entre em Contato</h2>
+      <h2 class="contato-titulo">Vamos conversar</h2>
       <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
         <div class="grupo-form">
-          <input placeholder="Nome" class="campo-form" id="nome">
+          <label for="nome">Seu nome</label>
+          <input class="campo-form" id="nome" required />
         </div>
-
         <div class="grupo-form">
-          <textarea placeholder="Digite a sua mensagem" class="campo-form" rows="5" id="mensagem"></textarea>
+          <label for="mensagem">Mensagem</label>
+          <textarea class="campo-form" rows="5" id="mensagem" required></textarea>
         </div>
-
-        <button type="submit" class="botao-form">Enviar Whatzap</button>
+        <div class="botoes-form">
+          <button type="submit" class="botao-form">Enviar pelo WhatsApp</button>
+          <button type="button" class="botao-form botao-email" onclick="enviarEmail()">
+            <svg class="icone-gmail" viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#4caf50" d="M45 16.2l-5 2.75-5 4.75L35 40h7c1.657 0 3-1.343 3-3V16.2z"/>
+              <path fill="#1e88e5" d="M3 16.2l3.614 1.71L13 23.7V40H6c-1.657 0-3-1.343-3-3V16.2z"/>
+              <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"/>
+              <path fill="#c62828" d="M3 12.298V16.2l10 7.5V11.2L9.876 8.859C9.132 8.301 8.228 8 7.298 8 4.924 8 3 9.924 3 12.298z"/>
+              <path fill="#fbc02d" d="M45 12.298V16.2l-10 7.5V11.2l3.124-2.341C38.868 8.301 39.772 8 40.702 8 43.076 8 45 9.924 45 12.298z"/>
+            </svg>
+            Enviar por e-mail
+          </button>
+        </div>
       </form>
     </section>
-    
+
+    <footer class="rodape">
+      <p>© 2026 Leonardo Silva · <a href="https://github.com/LeonardoSilvaOliveira" target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+
     <script>
-     
       function enviarMensagem(event) {
-
-        event.preventDefault(); // Impede o envio do formulário
-        const nome = document.getElementById('nome').value;
-        const mensagem = document.getElementById('mensagem').value;
-        const numeroWhatsApp = '5511959705202'; // Substitua pelo seu número de WhatsApp
-
-        const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=Olá, meu nome é ${encodeURIComponent(nome)}. ${encodeURIComponent(mensagem)}`;
-
-        window.open(urlWhatsApp, '_blank');
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const numeroWhatsApp = "5511959705202";
+        const texto = encodeURIComponent(`Olá, meu nome é ${nome}. ${mensagem}`);
+        window.open(`https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${texto}`, "_blank");
       }
-
+      function enviarEmail() {
+        const form = document.getElementById("formulario");
+        if (!form.reportValidity()) return;
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const assunto = encodeURIComponent(`Contato pelo portfólio: ${nome}`);
+        const corpo = encodeURIComponent(`Olá, meu nome é ${nome}.\n\n${mensagem}`);
+        window.location.href = `mailto:leonardo.oliver2704@gmail.com?subject=${assunto}&body=${corpo}`;
+      }
     </script>
   </body>
 </html>
-
-
 
 
 
